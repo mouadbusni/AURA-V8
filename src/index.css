@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Lexend+Deca:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Neoza font */
+@font-face {
+  font-family: 'Neoza';
+  src: url('/fonts/Neoza.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary: 0 0 0; /* black */
+  --secondary: 255 255 255; /* white */
+  --accent: 212 175 55; /* gold */
+}
+
+body {
+  @apply bg-white text-black antialiased font-inter;
+  overflow-x: hidden;
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold md:text-5xl lg:text-6xl font-bongita tracking-wide;
+  }
+  
+  h2 {
+    @apply text-3xl font-bold md:text-4xl font-bongita tracking-wide;
+  }
+  
+  h3 {
+    @apply text-2xl font-semibold md:text-3xl font-bongita;
+  }
+  
+  h4 {
+    @apply text-xl font-semibold md:text-2xl font-poppins;
+  }
+  
+  h5 {
+    @apply text-lg font-medium md:text-xl font-poppins;
+  }
+  
+  p {
+    @apply text-base leading-relaxed font-inter;
+  }
+
+  .product-name {
+    @apply font-bongita;
+  }
+
+  .product-description {
+    @apply font-space;
+  }
+
+  .story-text {
+    @apply font-lexend;
+  }
+
+  .nav-link {
+    @apply font-dm;
+  }
+
+  .form-label {
+    @apply font-dm;
+  }
+
+  .logo-text {
+    @apply font-neoza tracking-wider;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 font-montserrat font-medium transition-all duration-200 rounded-none;
+  }
+  
+  .btn-primary {
+    @apply bg-aura-black text-aura-white hover:bg-aura-gray-800;
+  }
+  
+  .btn-secondary {
+    @apply bg-aura-white text-aura-black border border-aura-black hover:bg-aura-gray-100;
+  }
+  
+  .btn-accent {
+    @apply bg-aura-gold text-aura-black hover:bg-opacity-90;
+  }
+
+  .container-custom {
+    @apply px-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
+  }
+
+  .immersive-header {
+    @apply font-bongita;
+  }
+
+  .immersive-text {
+    @apply font-lexend;
+  }
+}
