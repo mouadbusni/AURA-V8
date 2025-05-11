@@ -7,15 +7,12 @@ Based on our discussion so far, here's a draft for your README file:
 AURA-V8 is a project built with **React**, utilizing **TypeScript** as the primary programming language. It also incorporates **HTML**, **JavaScript**, and **CSS** for various functionalities and styling.
 
 ## Table of Contents
-- [Overview](#overview)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Overview
-This project is designed to [insert purpose or goal of the project]. It leverages modern web development tools and frameworks to deliver [specific features or value proposition].
 
 ## Features
 - Built with **React** for a responsive and modular UI
